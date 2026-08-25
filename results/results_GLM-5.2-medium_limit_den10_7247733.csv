@@ -1,0 +1,148 @@
+model,task_id,kind,method,repeat,prompt,response,answer_text,parsed,truth,correct,abs_err,rel_err,parse_ok,prompt_tokens,completion_tokens,latency_s,error
+GLM-5.2,mul_pi_third,arithmetic,limit,0,"Compute 22/7 * 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","To multiply the fractions:
+
+\[
+\frac{22}{7} \times \frac{1}{3} = \frac{22 \times 1}{7 \times 3} = \frac{22}{21}
+\]
+
+ANSWER: 22/21",22/21,1.0476190476190477,1.0471975511965979,False,0.00042149642244981855,0.00040249943477063004,True,57,126,4.5500664710998535,
+GLM-5.2,mul_pi_third,arithmetic,limit,1,"Compute 22/7 * 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Multiply the numerators: \(22 \times 1 = 22\)
+
+Multiply the denominators: \(7 \times 3 = 21\)
+
+So the product is \(\frac{22}{21}\).
+
+ANSWER: 22/21",22/21,1.0476190476190477,1.0471975511965979,False,0.00042149642244981855,0.00040249943477063004,True,57,133,1.281662940979004,
+GLM-5.2,mul_pi_third,arithmetic,limit,2,"Compute 22/7 * 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","To multiply the fractions:
+
+\[
+\frac{22}{7} \times \frac{1}{3} = \frac{22 \times 1}{7 \times 3} = \frac{22}{21}
+\]
+
+ANSWER: 22/21",22/21,1.0476190476190477,1.0471975511965979,False,0.00042149642244981855,0.00040249943477063004,True,57,126,1.4445714950561523,
+GLM-5.2,add_sqrt2_third,arithmetic,limit,0,"Compute 7/5 + 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","To add the fractions, find a common denominator. The least common denominator of 5 and 3 is 15.
+
+7/5 = 21/15  
+1/3 = 5/15  
+
+So, 7/5 + 1/3 = 21/15 + 5/15 = 26/15.
+
+ANSWER: 26/15",26/15,1.7333333333333334,1.7475468957064284,False,0.014213562373095012,0.008133436881159816,True,57,181,1.4089152812957764,
+GLM-5.2,add_sqrt2_third,arithmetic,limit,1,"Compute 7/5 + 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","To add the fractions, find a common denominator. The least common denominator of 5 and 3 is 15.
+
+7/5 = 21/15  
+1/3 = 5/15  
+
+So, 21/15 + 5/15 = 26/15.
+
+ANSWER: 26/15",26/15,1.7333333333333334,1.7475468957064284,False,0.014213562373095012,0.008133436881159816,True,57,174,1.2843472957611084,
+GLM-5.2,add_sqrt2_third,arithmetic,limit,2,"Compute 7/5 + 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","To add the fractions, find a common denominator. The least common denominator of 5 and 3 is 15.
+
+7/5 = 21/15  
+1/3 = 5/15  
+
+So, 21/15 + 5/15 = 26/15.
+
+ANSWER: 26/15",26/15,1.7333333333333334,1.7475468957064284,False,0.014213562373095012,0.008133436881159816,True,57,174,1.3324706554412842,
+GLM-5.2,square_sqrt2,reasoning,limit,0,"Compute 7/5 squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","To compute \((7/5)^2\), square the numerator and the denominator:
+
+\[
+(7/5)^2 = \frac{7^2}{5^2} = \frac{49}{25}
+\]
+
+ANSWER: 49/25",49/25,1.96,2.0,False,0.040000000000000036,0.020000000000000018,True,53,165,1.2976257801055908,
+GLM-5.2,square_sqrt2,reasoning,limit,1,"Compute 7/5 squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","To compute \((7/5)^2\), square the numerator and the denominator:
+
+\[
+(7/5)^2 = \frac{7^2}{5^2} = \frac{49}{25}
+\]
+
+ANSWER: 49/25",49/25,1.96,2.0,False,0.040000000000000036,0.020000000000000018,True,53,163,1.3092002868652344,
+GLM-5.2,square_sqrt2,reasoning,limit,2,"Compute 7/5 squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","To square \(\frac{7}{5}\), multiply it by itself:
+
+\[
+\left(\frac{7}{5}\right)^2 = \frac{7}{5} \times \frac{7}{5} = \frac{49}{25}
+\]
+
+ANSWER: 49/25",49/25,1.96,2.0,False,0.040000000000000036,0.020000000000000018,True,53,228,1.8205201625823975,
+GLM-5.2,compare_pi_seventh,compare,limit,0,"Which is larger, 22/7 or 1/7? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","22/7 and 1/7 have the same denominator. Since 22 > 1, 22/7 is larger.
+
+ANSWER: 1",1,1.0,1.0,True,0.0,0.0,True,73,92,0.8377153873443604,
+GLM-5.2,compare_pi_seventh,compare,limit,1,"Which is larger, 22/7 or 1/7? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","22/7 and 1/7 have the same denominator. Since 22 > 1, 22/7 is larger.
+
+ANSWER: 1",1,1.0,1.0,True,0.0,0.0,True,73,92,0.8659641742706299,
+GLM-5.2,compare_pi_seventh,compare,limit,2,"Which is larger, 22/7 or 1/7? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","22/7 and 1/7 have the same denominator. Since 22 > 1, 22/7 is larger.
+
+ANSWER: 1",1,1.0,1.0,True,0.0,0.0,True,73,103,1.0296308994293213,
+GLM-5.2,mul_seventh_seven,arithmetic,limit,0,"Compute 1/7 * 2/1.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","1/7 * 2/1 = (1*2)/(7*1) = 2/7
+
+ANSWER: 2/7",2/7,0.2857142857142857,0.2857142857142857,True,0.0,0.0,True,57,86,0.7264025211334229,
+GLM-5.2,mul_seventh_seven,arithmetic,limit,1,"Compute 1/7 * 2/1.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","1/7 * 2/1 = (1*2)/(7*1) = 2/7
+
+ANSWER: 2/7",2/7,0.2857142857142857,0.2857142857142857,True,0.0,0.0,True,57,86,0.725848913192749,
+GLM-5.2,mul_seventh_seven,arithmetic,limit,2,"Compute 1/7 * 2/1.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","1/7 * 2/1 = (1*2)/(7*1) = 2/7
+
+ANSWER: 2/7",2/7,0.2857142857142857,0.2857142857142857,True,0.0,0.0,True,57,86,0.9657907485961914,
+GLM-5.2,four_times_piq,reasoning,limit,0,"Compute 4 * 7/9.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","4 * 7/9 = (4 * 7)/9 = 28/9
+
+ANSWER: 28/9",28/9,3.111111111111111,3.141592653589793,False,0.030481542478681956,0.009702576317095634,True,55,97,0.8544445037841797,
+GLM-5.2,four_times_piq,reasoning,limit,1,"Compute 4 * 7/9.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","4 * 7/9 = (4 * 7) / 9 = 28/9
+
+ANSWER: 28/9",28/9,3.111111111111111,3.141592653589793,False,0.030481542478681956,0.009702576317095634,True,55,101,0.872351884841919,
+GLM-5.2,four_times_piq,reasoning,limit,2,"Compute 4 * 7/9.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","4 * 7/9 = (4 * 7) / 9 = 28/9
+
+ANSWER: 28/9",28/9,3.111111111111111,3.141592653589793,False,0.030481542478681956,0.009702576317095634,True,55,101,0.8726358413696289,

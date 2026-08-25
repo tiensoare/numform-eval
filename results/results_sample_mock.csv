@@ -1,0 +1,121 @@
+model,task_id,kind,method,repeat,prompt,response,answer_text,parsed,truth,correct,abs_err,rel_err,parse_ok,prompt_tokens,completion_tokens,latency_s,error
+mock,mul_pi_third,arithmetic,original,0,"Compute 3.14159265358979 * 0.333333333333333.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 3.001200",3.001200,3.0012,1.0471975511965979,False,1.954002448803402,1.8659348912443772,True,39,12,0.001,
+mock,mul_pi_third,arithmetic,exact,0,"Compute 3141592653589793/1000000000000000 * 3333333333333333/10000000000000000.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.047198",1.047198,1.047198,1.0471975511965979,True,4.4880340221986614e-07,4.285756796385108e-07,True,48,12,0.001,
+mock,mul_pi_third,arithmetic,limit,0,"Compute 355/113 * 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.047198",1.047198,1.047198,1.0471975511965979,True,4.4880340221986614e-07,4.285756796385108e-07,True,34,12,0.001,
+mock,mul_pi_third,arithmetic,nsimplify,0,"Compute pi * 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.047198",1.047198,1.047198,1.0471975511965979,True,4.4880340221986614e-07,4.285756796385108e-07,True,32,12,0.001,
+mock,add_sqrt2_third,arithmetic,original,0,"Compute 1.41421356237310 + 0.333333333333333.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.000400",1.000400,1.0004,1.7475468957064284,False,0.7471468957064284,0.4275403982245648,True,39,12,0.001,
+mock,add_sqrt2_third,arithmetic,exact,0,"Compute 14142135623730951/10000000000000000 + 3333333333333333/10000000000000000.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.747547",1.747547,1.747547,1.7475468957064284,True,1.0429357155672392e-07,5.96799844473211e-08,True,48,12,0.001,
+mock,add_sqrt2_third,arithmetic,limit,0,"Compute 1393/985 + 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.747547",1.747547,1.747547,1.7475468957064284,True,1.0429357155672392e-07,5.96799844473211e-08,True,34,12,0.001,
+mock,add_sqrt2_third,arithmetic,nsimplify,0,"Compute sqrt(2) + 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.747547",1.747547,1.747547,1.7475468957064284,True,1.0429357155672392e-07,5.96799844473211e-08,True,34,12,0.001,
+mock,square_sqrt2,reasoning,original,0,"Compute 1.41421356237310 squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.000400",1.000400,1.0004,2.0,False,0.9996,0.4998,True,36,12,0.001,
+mock,square_sqrt2,reasoning,exact,0,"Compute 14142135623730951/10000000000000000 squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 2.000000",2.000000,2.0,2.0,True,0.0,0.0,True,41,12,0.001,
+mock,square_sqrt2,reasoning,limit,0,"Compute 1393/985 squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.999999",1.999999,1.999999,2.0,True,9.999999999177334e-07,4.999999999588667e-07,True,34,12,0.001,
+mock,square_sqrt2,reasoning,nsimplify,0,"Compute sqrt(2) squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 2.000000",2.000000,2.0,2.0,True,0.0,0.0,True,34,12,0.001,
+mock,compare_pi_seventh,compare,original,0,"Which is larger, 3.14159265358979 or 0.142857142857143? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.000400",1.000400,1.0004,1.0,False,0.00039999999999995595,0.00039999999999995595,True,53,12,0.001,
+mock,compare_pi_seventh,compare,exact,0,"Which is larger, 3141592653589793/1000000000000000 or 2857142857142857/20000000000000000? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.000000",1.000000,1.0,1.0,True,0.0,0.0,True,62,12,0.001,
+mock,compare_pi_seventh,compare,limit,0,"Which is larger, 355/113 or 1/7? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.000000",1.000000,1.0,1.0,True,0.0,0.0,True,48,12,0.001,
+mock,compare_pi_seventh,compare,nsimplify,0,"Which is larger, pi or 1/7? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 1.000000",1.000000,1.0,1.0,True,0.0,0.0,True,46,12,0.001,
+mock,mul_seventh_seven,arithmetic,original,0,"Compute 0.142857142857143 * 2.00000000000000.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 0.000000",0.000000,0.0,0.2857142857142857,False,0.2857142857142857,1.0,True,39,12,0.001,
+mock,mul_seventh_seven,arithmetic,exact,0,"Compute 2857142857142857/20000000000000000 * 2/1.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 0.285714",0.285714,0.285714,0.2857142857142857,True,2.8571428567492063e-07,9.999999998622222e-07,True,40,12,0.001,
+mock,mul_seventh_seven,arithmetic,limit,0,"Compute 1/7 * 2/1.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 0.285714",0.285714,0.285714,0.2857142857142857,True,2.8571428567492063e-07,9.999999998622222e-07,True,33,12,0.001,
+mock,mul_seventh_seven,arithmetic,nsimplify,0,"Compute 1/7 * 2.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 0.285714",0.285714,0.285714,0.2857142857142857,True,2.8571428567492063e-07,9.999999998622222e-07,True,32,12,0.001,
+mock,four_times_piq,reasoning,original,0,"Compute 4 * 0.785398163397448.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 0.000000",0.000000,0.0,3.141592653589793,False,3.141592653589793,1.0,True,36,12,0.001,
+mock,four_times_piq,reasoning,exact,0,"Compute 4 * 7853981633974483/10000000000000000.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 3.141593",3.141593,3.141593,3.141592653589793,True,3.4641020674186507e-07,1.1026579348090647e-07,True,40,12,0.001,
+mock,four_times_piq,reasoning,limit,0,"Compute 4 * 355/452.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 3.141593",3.141593,3.141593,3.141592653589793,True,3.4641020674186507e-07,1.1026579348090647e-07,True,33,12,0.001,
+mock,four_times_piq,reasoning,nsimplify,0,"Compute 4 * pi/4.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","Working...
+ANSWER: 3.141593",3.141593,3.141593,3.141592653589793,True,3.4641020674186507e-07,1.1026579348090647e-07,True,32,12,0.001,

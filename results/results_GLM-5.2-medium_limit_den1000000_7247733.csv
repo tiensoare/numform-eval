@@ -1,0 +1,98 @@
+model,task_id,kind,method,repeat,prompt,response,answer_text,parsed,truth,correct,abs_err,rel_err,parse_ok,prompt_tokens,completion_tokens,latency_s,error
+GLM-5.2,mul_pi_third,arithmetic,limit,0,"Compute 3126535/995207 * 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,1.0471975511965979,False,,,False,63,2048,18.101481199264526,
+GLM-5.2,mul_pi_third,arithmetic,limit,1,"Compute 3126535/995207 * 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,1.0471975511965979,False,,,False,63,2048,19.27042579650879,
+GLM-5.2,mul_pi_third,arithmetic,limit,2,"Compute 3126535/995207 * 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,1.0471975511965979,False,,,False,63,2048,19.49778914451599,
+GLM-5.2,add_sqrt2_third,arithmetic,limit,0,"Compute 941664/665857 + 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,1.7475468957064284,False,,,False,63,2048,18.81847357749939,
+GLM-5.2,add_sqrt2_third,arithmetic,limit,1,"Compute 941664/665857 + 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,1.7475468957064284,False,,,False,63,2048,16.09548592567444,
+GLM-5.2,add_sqrt2_third,arithmetic,limit,2,"Compute 941664/665857 + 1/3.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,1.7475468957064284,False,,,False,63,2048,19.08482313156128,
+GLM-5.2,square_sqrt2,reasoning,limit,0,"Compute 941664/665857 squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,2.0,False,,,False,59,2048,20.40199041366577,
+GLM-5.2,square_sqrt2,reasoning,limit,1,"Compute 941664/665857 squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,2.0,False,,,False,59,2048,15.156002044677734,
+GLM-5.2,square_sqrt2,reasoning,limit,2,"Compute 941664/665857 squared.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,2.0,False,,,False,59,2048,21.41024875640869,
+GLM-5.2,compare_pi_seventh,compare,limit,0,"Which is larger, 3126535/995207 or 1/7? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","We compare by cross-multiplying:
+
+7 × 3,126,535 = 21,885,745
+
+1 × 995,207 = 995,207
+
+Since 21,885,745 > 995,207, the first fraction is larger.
+
+ANSWER: 1",1,1.0,1.0,True,0.0,0.0,True,79,198,1.6023900508880615,
+GLM-5.2,compare_pi_seventh,compare,limit,1,"Which is larger, 3126535/995207 or 1/7? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","We compare by cross-multiplying:
+
+3126535/995207 ? 1/7
+
+7 × 3126535 = 21885745
+1 × 995207 = 995207
+
+Since 21885745 > 995207, the first fraction is larger.
+
+ANSWER: 1",1,1.0,1.0,True,0.0,0.0,True,79,231,1.7525956630706787,
+GLM-5.2,compare_pi_seventh,compare,limit,2,"Which is larger, 3126535/995207 or 1/7? Answer 1 if the first is larger, 0 otherwise.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","7 × 3,126,535 = 21,885,745, which is greater than 995,207. Therefore, 3126535/995207 is larger than 1/7.
+
+ANSWER: 1",1,1.0,1.0,True,0.0,0.0,True,79,266,6.094916582107544,
+GLM-5.2,mul_seventh_seven,arithmetic,limit,0,"Compute 1/7 * 2/1.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","1/7 * 2/1 = (1*2)/(7*1) = 2/7
+
+ANSWER: 2/7",2/7,0.2857142857142857,0.2857142857142857,True,0.0,0.0,True,57,86,0.7316961288452148,
+GLM-5.2,mul_seventh_seven,arithmetic,limit,1,"Compute 1/7 * 2/1.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","1/7 * 2/1 = (1*2)/(7*1) = 2/7
+
+ANSWER: 2/7",2/7,0.2857142857142857,0.2857142857142857,True,0.0,0.0,True,57,86,0.7267932891845703,
+GLM-5.2,mul_seventh_seven,arithmetic,limit,2,"Compute 1/7 * 2/1.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>","1/7 * 2/1 = (1*2)/(7*1) = 2/7
+
+ANSWER: 2/7",2/7,0.2857142857142857,0.2857142857142857,True,0.0,0.0,True,57,81,0.8703868389129639,
+GLM-5.2,four_times_piq,reasoning,limit,0,"Compute 4 * 286602/364913.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,3.141592653589793,False,,,False,61,2048,12.7904531955719,
+GLM-5.2,four_times_piq,reasoning,limit,1,"Compute 4 * 286602/364913.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,3.141592653589793,False,,,False,61,2048,14.028966903686523,
+GLM-5.2,four_times_piq,reasoning,limit,2,"Compute 4 * 286602/364913.
+
+Think step by step, then give the final numeric answer on the last line in exactly this format:
+ANSWER: <number>",,,,3.141592653589793,False,,,False,61,2048,16.70126175880432,

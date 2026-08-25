@@ -1,0 +1,28 @@
+Loaded 72 rows from 2 path(s); series: exact, limit(den=1000), nsimplify, original
+
+Overall accuracy by series:
+      | exact      | limit(den=1000) | nsimplify   | original   
+  --------------------------------------------------------------
+  all | 50% (9/18) | 100% (18/18)    | 89% (16/18) | 56% (10/18)
+
+Accuracy by kind x series:
+  kind       | exact      | limit(den=1000) | nsimplify  | original  
+  -------------------------------------------------------------------
+  arithmetic | 33% (3/9)  | 100% (9/9)      | 100% (9/9) | 44% (4/9) 
+  compare    | 100% (3/3) | 100% (3/3)      | 100% (3/3) | 100% (3/3)
+  reasoning  | 50% (3/6)  | 100% (6/6)      | 67% (4/6)  | 50% (3/6) 
+
+Accuracy by task x series:
+  task               | exact      | limit(den=1000) | nsimplify  | original  
+  ---------------------------------------------------------------------------
+  add_sqrt2_third    | 67% (2/3)  | 100% (3/3)      | 100% (3/3) | 67% (2/3) 
+  compare_pi_seventh | 100% (3/3) | 100% (3/3)      | 100% (3/3) | 100% (3/3)
+  four_times_piq     | 100% (3/3) | 100% (3/3)      | 33% (1/3)  | 100% (3/3)
+  mul_pi_third       | 0% (0/3)   | 100% (3/3)      | 100% (3/3) | 0% (0/3)  
+  mul_seventh_seven  | 33% (1/3)  | 100% (3/3)      | 100% (3/3) | 67% (2/3) 
+  square_sqrt2       | 0% (0/3)   | 100% (3/3)      | 100% (3/3) | 0% (0/3)  
+
+Avg completion tokens by series:
+         | exact | limit(den=1000) | nsimplify | original
+  -------------------------------------------------------
+  tokens | 1376  | 532             | 438       | 1143    

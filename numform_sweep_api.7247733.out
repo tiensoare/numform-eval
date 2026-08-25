@@ -1,0 +1,192 @@
+WARN: ~/envs/numform not found; falling back to pip --user
+Querying GLM-5.2 via https://llm-api.arc.vt.edu/api/v1, effort=medium
+=== limit sweep, max_den=10 ===
+[1/18] mul_pi_third         limit      correct=False
+[2/18] mul_pi_third         limit      correct=False
+[3/18] mul_pi_third         limit      correct=False
+[4/18] add_sqrt2_third      limit      correct=False
+[5/18] add_sqrt2_third      limit      correct=False
+[6/18] add_sqrt2_third      limit      correct=False
+[7/18] square_sqrt2         limit      correct=False
+[8/18] square_sqrt2         limit      correct=False
+[9/18] square_sqrt2         limit      correct=False
+[10/18] compare_pi_seventh   limit      correct=True
+[11/18] compare_pi_seventh   limit      correct=True
+[12/18] compare_pi_seventh   limit      correct=True
+[13/18] mul_seventh_seven    limit      correct=True
+[14/18] mul_seventh_seven    limit      correct=True
+[15/18] mul_seventh_seven    limit      correct=True
+[16/18] four_times_piq       limit      correct=False
+[17/18] four_times_piq       limit      correct=False
+[18/18] four_times_piq       limit      correct=False
+
+Wrote 18 rows to results_GLM-5.2-medium_limit_den10_7247733.csv
+
+Accuracy by method:
+  limit      6/18 = 33.3%
+
+Accuracy by kind x method:
+  arithmetic   limit      3/9 = 33.3%
+  compare      limit      3/3 = 100.0%
+  reasoning    limit      0/6 = 0.0%
+=== limit sweep, max_den=100 ===
+[1/18] mul_pi_third         limit      correct=True
+[2/18] mul_pi_third         limit      correct=True
+[3/18] mul_pi_third         limit      correct=True
+[4/18] add_sqrt2_third      limit      correct=True
+[5/18] add_sqrt2_third      limit      correct=True
+[6/18] add_sqrt2_third      limit      correct=True
+[7/18] square_sqrt2         limit      correct=False
+[8/18] square_sqrt2         limit      correct=False
+[9/18] square_sqrt2         limit      correct=False
+[10/18] compare_pi_seventh   limit      correct=True
+[11/18] compare_pi_seventh   limit      correct=True
+[12/18] compare_pi_seventh   limit      correct=True
+[13/18] mul_seventh_seven    limit      correct=True
+[14/18] mul_seventh_seven    limit      correct=True
+[15/18] mul_seventh_seven    limit      correct=True
+[16/18] four_times_piq       limit      correct=False
+[17/18] four_times_piq       limit      correct=False
+[18/18] four_times_piq       limit      correct=False
+
+Wrote 18 rows to results_GLM-5.2-medium_limit_den100_7247733.csv
+
+Accuracy by method:
+  limit      12/18 = 66.7%
+
+Accuracy by kind x method:
+  arithmetic   limit      9/9 = 100.0%
+  compare      limit      3/3 = 100.0%
+  reasoning    limit      0/6 = 0.0%
+=== limit sweep, max_den=1000 ===
+[1/18] mul_pi_third         limit      correct=True
+[2/18] mul_pi_third         limit      correct=True
+[3/18] mul_pi_third         limit      correct=True
+[4/18] add_sqrt2_third      limit      correct=True
+[5/18] add_sqrt2_third      limit      correct=True
+[6/18] add_sqrt2_third      limit      correct=True
+[7/18] square_sqrt2         limit      correct=True
+[8/18] square_sqrt2         limit      correct=True
+[9/18] square_sqrt2         limit      correct=True
+[10/18] compare_pi_seventh   limit      correct=True
+[11/18] compare_pi_seventh   limit      correct=True
+[12/18] compare_pi_seventh   limit      correct=True
+[13/18] mul_seventh_seven    limit      correct=True
+[14/18] mul_seventh_seven    limit      correct=True
+[15/18] mul_seventh_seven    limit      correct=True
+[16/18] four_times_piq       limit      correct=True
+[17/18] four_times_piq       limit      correct=True
+[18/18] four_times_piq       limit      correct=True
+
+Wrote 18 rows to results_GLM-5.2-medium_limit_den1000_7247733.csv
+
+Accuracy by method:
+  limit      18/18 = 100.0%
+
+Accuracy by kind x method:
+  arithmetic   limit      9/9 = 100.0%
+  compare      limit      3/3 = 100.0%
+  reasoning    limit      6/6 = 100.0%
+=== limit sweep, max_den=1000000 ===
+[1/18] mul_pi_third         limit      correct=False
+[2/18] mul_pi_third         limit      correct=False
+[3/18] mul_pi_third         limit      correct=False
+[4/18] add_sqrt2_third      limit      correct=False
+[5/18] add_sqrt2_third      limit      correct=False
+[6/18] add_sqrt2_third      limit      correct=False
+[7/18] square_sqrt2         limit      correct=False
+[8/18] square_sqrt2         limit      correct=False
+[9/18] square_sqrt2         limit      correct=False
+[10/18] compare_pi_seventh   limit      correct=True
+[11/18] compare_pi_seventh   limit      correct=True
+[12/18] compare_pi_seventh   limit      correct=True
+[13/18] mul_seventh_seven    limit      correct=True
+[14/18] mul_seventh_seven    limit      correct=True
+[15/18] mul_seventh_seven    limit      correct=True
+[16/18] four_times_piq       limit      correct=False
+[17/18] four_times_piq       limit      correct=False
+[18/18] four_times_piq       limit      correct=False
+
+Wrote 18 rows to results_GLM-5.2-medium_limit_den1000000_7247733.csv
+
+Accuracy by method:
+  limit      6/18 = 33.3%
+
+Accuracy by kind x method:
+  arithmetic   limit      3/9 = 33.3%
+  compare      limit      3/3 = 100.0%
+  reasoning    limit      0/6 = 0.0%
+=== original / exact / nsimplify ===
+[1/54] mul_pi_third         original   correct=False
+[2/54] mul_pi_third         original   correct=False
+[3/54] mul_pi_third         original   correct=False
+[4/54] mul_pi_third         exact      correct=False
+[5/54] mul_pi_third         exact      correct=False
+[6/54] mul_pi_third         exact      correct=False
+[7/54] mul_pi_third         nsimplify  correct=True
+[8/54] mul_pi_third         nsimplify  correct=True
+[9/54] mul_pi_third         nsimplify  correct=True
+[10/54] add_sqrt2_third      original   correct=True
+[11/54] add_sqrt2_third      original   correct=True
+[12/54] add_sqrt2_third      original   correct=False
+[13/54] add_sqrt2_third      exact      correct=True
+[14/54] add_sqrt2_third      exact      correct=False
+[15/54] add_sqrt2_third      exact      correct=True
+[16/54] add_sqrt2_third      nsimplify  correct=True
+[17/54] add_sqrt2_third      nsimplify  correct=True
+[18/54] add_sqrt2_third      nsimplify  correct=True
+[19/54] square_sqrt2         original   correct=False
+[20/54] square_sqrt2         original   correct=False
+[21/54] square_sqrt2         original   correct=False
+[22/54] square_sqrt2         exact      correct=False
+[23/54] square_sqrt2         exact      correct=False
+[24/54] square_sqrt2         exact      correct=False
+[25/54] square_sqrt2         nsimplify  correct=True
+[26/54] square_sqrt2         nsimplify  correct=True
+[27/54] square_sqrt2         nsimplify  correct=True
+[28/54] compare_pi_seventh   original   correct=True
+[29/54] compare_pi_seventh   original   correct=True
+[30/54] compare_pi_seventh   original   correct=True
+[31/54] compare_pi_seventh   exact      correct=True
+[32/54] compare_pi_seventh   exact      correct=True
+[33/54] compare_pi_seventh   exact      correct=True
+[34/54] compare_pi_seventh   nsimplify  correct=True
+[35/54] compare_pi_seventh   nsimplify  correct=True
+[36/54] compare_pi_seventh   nsimplify  correct=True
+[37/54] mul_seventh_seven    original   correct=True
+[38/54] mul_seventh_seven    original   correct=True
+[39/54] mul_seventh_seven    original   correct=False
+[40/54] mul_seventh_seven    exact      correct=False
+[41/54] mul_seventh_seven    exact      correct=False
+[42/54] mul_seventh_seven    exact      correct=True
+[43/54] mul_seventh_seven    nsimplify  correct=True
+[44/54] mul_seventh_seven    nsimplify  correct=True
+[45/54] mul_seventh_seven    nsimplify  correct=True
+[46/54] four_times_piq       original   correct=True
+[47/54] four_times_piq       original   correct=True
+[48/54] four_times_piq       original   correct=True
+[49/54] four_times_piq       exact      correct=True
+[50/54] four_times_piq       exact      correct=True
+[51/54] four_times_piq       exact      correct=True
+[52/54] four_times_piq       nsimplify  correct=False
+[53/54] four_times_piq       nsimplify  correct=False
+[54/54] four_times_piq       nsimplify  correct=True
+
+Wrote 54 rows to results_GLM-5.2-medium_other_7247733.csv
+
+Accuracy by method:
+  exact      9/18 = 50.0%
+  nsimplify  16/18 = 88.9%
+  original   10/18 = 55.6%
+
+Accuracy by kind x method:
+  arithmetic   exact      3/9 = 33.3%
+  arithmetic   nsimplify  9/9 = 100.0%
+  arithmetic   original   4/9 = 44.4%
+  compare      exact      3/3 = 100.0%
+  compare      nsimplify  3/3 = 100.0%
+  compare      original   3/3 = 100.0%
+  reasoning    exact      3/6 = 50.0%
+  reasoning    nsimplify  4/6 = 66.7%
+  reasoning    original   3/6 = 50.0%
+Sweep complete for GLM-5.2-medium (via ARC LLM API).
