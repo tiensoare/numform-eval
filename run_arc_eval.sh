@@ -10,7 +10,7 @@
 ## =====================================================================
 
 ## ---- Job parameters (EDIT the account; check partition for your cluster) ----
-#SBATCH --job-name=numform_eval
+#SBATCH --job-name=numform-eval
 #SBATCH --account=llmsemantics        # <-- REQUIRED: your allocation name
 #SBATCH --partition=a100_normal_q           # TinkerCliffs A100 queue; see notes below
 #SBATCH --nodes=1
@@ -19,8 +19,8 @@
 #SBATCH --gres=gpu:a100:1                    # 1 A100-80GB; bump to 2 for a 120B model
 #SBATCH --mem=120G
 #SBATCH --time=1-00:00:00                    # 1 day; raise for big sweeps
-#SBATCH --output=numform_eval.%j.out
-#SBATCH --error=numform_eval.%j.err
+#SBATCH --output=numform-eval.%j.out
+#SBATCH --error=numform-eval.%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=tiennguyen@vt.edu
 

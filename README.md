@@ -66,7 +66,7 @@ no rate limits, fully reproducible for a paper.
 #    partition/GPU names for your cluster, and MODEL_PATH (see below)
 sbatch run_arc_eval.sh
 squeue -u $USER            # watch the queue
-tail -f numform_eval.*.out # watch progress
+tail -f numform-eval.*.out # watch progress
 seff <jobid>               # memory report after it finishes
 ```
 
